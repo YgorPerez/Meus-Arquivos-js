@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico&display=swap');
+body {
+    background-color: rgba(15, 15, 201, 0.527);
+    font-size: 18pt;
+}
+button {
+    padding: 30px;
+    font-size: 14pt;
+    background-color: blueviolet;
+}
+h1 {
+    font-family: 'Times New Roman', Times, serif;
+}
