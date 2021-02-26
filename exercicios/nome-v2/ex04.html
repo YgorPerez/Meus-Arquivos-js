@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nome v2</title>
+    <style>
+        body {
+            background-color: rgba(15, 15, 201, 0.527);
+            font-size: 18pt;
+        }
+        button {
+            padding: 30px;
+            font-size: 14pt;
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com dados</h1>
+    <button onclick="comece()">Clique para começar</button>
+    <section name="res" id="res"> 
+    <p>Aqui vai aparecer o resultado...</p>
+    </section>
+    <script>
+        function comece() {
+            let nome = window.prompt('Qual é o seu nome?')
+            res.innerHTML = (`Prazer em te conhecer ${nome}`)
+        }
+    </script>
+</body>
+</html>

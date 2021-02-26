@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fazendo calculos</title>
+    <style>
+        body {
+            background-color: rgba(15, 15, 201, 0.527);
+            font-size: 18pt;
+        }
+        button {
+            padding: 30px;
+            font-size: 14pt;
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <h1>Fazendo vários calculos</h1>
+    <button onclick="calcular()">Calcular</button>
+    <section id="res">
+        <p>O resultado vai aparecer aqui...</p>
+    </section>
+    <script>
+        function calcular() {
+            let num = Number(window.prompt('Digite um número:'))
+            res.innerHTML= `<p>O número a ser calculado será <strong>${num}</strong></p>`
+            res.innerHTML += `<p>O seu valor absoluto é de <strong>${Math.abs(num)}</strong></p>`
+            res.innerHTML += `<p>A sua parte inteira é <strong>${Math.trunc(num)}</strong></p>`
+            res.innerHTML += `<p>Arredondando vira <strong>${Math.round(num)}</strong></p>`
+            res.innerHTML += `<p>A sua raiz quadrada é <strong>${Math.sqrt(num).toFixed(2)}</strong> </p>`
+            res.innerHTML += `<p>A sua raiz cúbica é <strong>${Math.cbrt(num).toFixed(2)}</strong></p>`
+            res.innerHTML += `<p>O valor de <strong>${num}<sup>2</sup></strong> é <strong>${Math.pow(num,2).toFixed(2)}</strong></p>`
+            res.innerHTML += `<p>O valor de <strong>${num}<sup>3</sup></strong> é <strong>${Math.pow(num,3).toFixed(2)}</strong></p>`
+        }
+    </script>
+</body>
+</html>
